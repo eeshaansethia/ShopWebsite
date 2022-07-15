@@ -211,6 +211,63 @@ body {
     text-decoration: underline;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/images/home.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    width: 100%;
+    height: 30rem;
+}
+
+.home .content {
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h3 {
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.home .content h3 span {
+    background: var(--pink);
+    color: #fff;
+    display: inline-block;
+    padding: .1rem 2rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.home .content p {
+    color: var(--black);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-shadow:
+    0 0 0.4rem #fff,
+    0 0 0.6rem #fff,
+    0 0 1rem #fff,
+    0 0 2rem var(--pink),
+    0 0 4rem var(--pink);
+}
+
+.home .content a{
+    background-color: var(--pink);
+    color: #fff;
+    font-weight: bold;
+}
+
+.home .content a:hover{
+    background-color: #eee;
+    color: var(--pink);
+}
+
+
+
 @media (max-width:1024px) {
 
     html {
