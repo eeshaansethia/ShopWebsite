@@ -96,6 +96,23 @@ body {
     color: #fff;
 }
 
+.btn-added{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .6rem 2.5rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--pink);
+    cursor: pointer;
+    background: none;
+}
+
+.btn-added:hover {
+    background: var(--black);
+    color: #fff;
+}
+
 #menu-btn {
     display: none;
 }
@@ -270,6 +287,7 @@ body {
 .items {
     box-sizing: border-box;
     border: var(--border);
+    box-shadow: var(--box-shadow);
     height: auto;
     margin: 2em 20%;
     padding: 1em 2em;
@@ -277,7 +295,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: rgba(255, 0, 81, 0.85);
+    border-radius: 2em;
 }
 
 .items h1 {
@@ -294,26 +313,16 @@ td {
 td img {
     width: 50%;
     height: 50%;
-    transition-duration: 2s;
+    transition-duration: 0.3s;
 }
 
 td img:hover {
-    transform: rotate(360deg);
+    transform: rotate(35deg);
 }
 
 td :hover {
     color: brown;
     cursor: pointer;
-}
-
-.shoe {
-    width: 75%;
-    height: 75%;
-}
-
-.smartp {
-    width: 40%;
-    height: 45%;
 }
 
 .cards {
@@ -334,7 +343,7 @@ td :hover {
     box-sizing: border-box;
     border-radius: 15px;
     width: 30em;
-    height:fit-content;
+    height: fit-content;
     box-shadow: var(--box-shadow);
     padding: 1rem;
 }
@@ -363,6 +372,7 @@ td :hover {
     font-weight: bolder;
     padding: 0.3em;
     font-size: 0.9em;
+    text-align: justify;
 }
 
 .arr {
@@ -373,7 +383,7 @@ td :hover {
 
 table a {
     padding: 1em;
-    color: var(--black);
+    color: white;
 }
 
 .heading {
@@ -391,17 +401,226 @@ table a {
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
 
-.item1{
+.item1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+footer {
+    width: 100%;
+    background: linear-gradient(to right, var(--pink), #ff0045);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 150px;
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 0;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 20%;
+    padding: 20px;
+    margin: 0;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 170px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-variant: small-caps;
+}
+
+.col h2 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    margin-left: -38.5px;
+    font-family: 'popins', sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+footer form .fa-solid fa-envelope {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+footer form input {
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+    padding: 0 5px;
+}
+
+footer form input::placeholder {
+    color: white;
+}
+
+footer form button {
+    font-size: 18px;
+    margin-right: 10px;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: var(--black);
+    background: #fff;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 10px auto;
+
+}
+
+.copyright {
+    text-align: center;
+
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: var(--pink);
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+
+}
+
+.conditions {
+    text-align: center;
+    padding: 10px;
+}
+
+.conditions a {
+    text-decoration: underline;
+    color: white;
+}
+
+.copyrights-section{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#arrow-top{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5%;
+    bottom: 0.5em;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10rem;
+    background: #fff;
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+#arrow-top:hover{
+    background: var(--pink);
+    color: #fff;
+}
+
+
+
 @media (max-width:1024px) {
 
     html {
         font-size: 55%;
+    }
+
+    td img {
+        width: 50%;
+        height: 50%;
     }
 
     .header {
@@ -414,6 +633,11 @@ table a {
 
     .inner_card1 {
         width: 50em;
+    }
+
+    td img {
+        width: 50%;
+        height: 50%;
     }
 
 }
@@ -438,6 +662,8 @@ table a {
         background: #fff;
     }
 
+
+
     .header .navbar.active {
         right: 2rem;
         transition: .4s linear;
@@ -457,6 +683,10 @@ table a {
     td img {
         padding: 1em;
         width: 3em;
+
+        width: 40%;
+        height: 40%;
+
     }
 
     .shoe {
@@ -486,6 +716,10 @@ table a {
     .read_more {
         display: block;
     }
+
+    td a {
+        font-size: 2.5em;
+    }
 }
 
 @media (max-width:450px) {
@@ -505,5 +739,14 @@ table a {
     .cards {
         position: relative;
         left: 1em;
+    }
+
+    td img {
+        width: 50%;
+        height: 50%;
+    }
+
+    td a {
+        font-size: 2.5em;
     }
 }
