@@ -339,11 +339,13 @@ td :hover {
     margin: 1em;
     margin-right: 4em;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     box-sizing: border-box;
     border-radius: 15px;
     width: 30em;
-    height: fit-content;
+    height: 35em;
     box-shadow: var(--box-shadow);
     padding: 1rem;
 }
@@ -386,6 +388,15 @@ table a {
     color: white;
 }
 
+.recommendations-card{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 1em;
+    padding: 2em;
+}
+
 .heading {
     text-align: center;
     padding: 2rem 0;
@@ -394,6 +405,22 @@ table a {
 }
 
 .heading span {
+    background: var(--pink);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.heading-rec {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    font-size: 2.25rem;
+    color: var(--black);
+}
+
+.heading-rec span {
     background: var(--pink);
     color: #fff;
     display: inline-block;
@@ -458,8 +485,6 @@ footer {
 
 .email-id {
     width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
 }
 
 footer ul li {
@@ -602,6 +627,15 @@ hr {
 #arrow-top:hover {
     background: var(--pink);
     color: #fff;
+}
+
+.col a{
+    color: white;
+    text-decoration: none;
+}
+
+.col a:hover{
+    text-decoration: underline;
 }
 
 
