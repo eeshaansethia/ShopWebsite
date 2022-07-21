@@ -18,19 +18,13 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s linear;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: #eee;
-    scroll-behavior: smooth;
+    background: #eee;    
 }
 
 .header {
@@ -47,13 +41,13 @@ body {
     box-shadow: var(--box-shadow);
 }
 
-.header .logo {
+.header .header-logo {
     font-size: 1.5rem;
     font-weight: bolder;
     color: var(--black);
 }
 
-.header .logo i {
+.header .header-logo i {
     color: var(--pink);
 }
 
@@ -437,19 +431,23 @@ footer {
 .col {
     flex-basis: 20%;
     padding: 20px;
-    margin: 0;
 }
 
-.col:nth-child(2),
-.col:nth-child(3) {
+.col:nth-child(2){
+    margin-right: 10px;
     flex-basis: 15%;
 }
 
-.logo {
-    width: 170px;
+.col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.footer-logo {
+    width: fit-content;
     margin-bottom: 30px;
     font-size: 40px;
     font-variant: small-caps;
+    line-height: 35px;
 }
 
 .col h2 {
@@ -553,34 +551,24 @@ hr {
     overflow: hidden;
 }
 
-.underline span {
-    width: 15px;
-    height: 100%;
-    background: var(--pink);
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    animation: moving 2s linear infinite;
-}
-
-@keyframes moving {
-    0% {
-        left: -20px;
-    }
-
-    100% {
-        left: 100%;
-    }
-
-}
-
 .conditions {
     text-align: center;
     padding: 10px;
+    padding-right: 0;
+    display: inline-block;
 }
 
 .conditions a {
+    text-decoration: underline;
+    color: white;
+}
+
+.privacy{
+    display: inline-block;
+    text-align: center;
+}
+
+.privacy a {
     text-decoration: underline;
     color: white;
 }
@@ -722,6 +710,10 @@ hr {
     td a {
         font-size: 2.5em;
     }
+
+    .footer-logo{
+        width: fit-content;
+    }
 }
 
 @media (max-width:450px) {
@@ -752,5 +744,12 @@ hr {
 
     td a {
         font-size: 2.5em;
+    }
+    .footer-logo{
+        width: fit-content;
+    }
+    
+    footer form input {
+        font-size: 57%;
     }
 }
