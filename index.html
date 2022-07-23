@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- Code for Navbar -->
     <header class="header">
         <a href="#" class="header-logo">
             <i class="fas fa-shopping-basket"></i> Alante
@@ -32,7 +33,7 @@
             <div class="fas fa-user" id="login-btn"></div>
         </div>
 
-        <form action="" class="search-form">
+        <form action="" class="search-form" id="search">
             <input type="search" id="search-box" placeholder="Search Here..." />
             <label for="search-box" class="fas fa-search"></label>
         </form>
@@ -51,6 +52,8 @@
             <input type="submit" value="login now" class="btn" />
         </form>
     </header>
+
+    <!-- Code for the Home Section -->
     <section class="home" id="home">
         <div class="content">
             <h3>Shop <span>With</span> Style</h3>
@@ -58,6 +61,8 @@
             <a href="#" class="btn">Shop Now</a>
         </div>
     </section>
+
+    <!-- Code for the Recommendations Section -->
     <section id="recommendations" class="recommendations">
         <h1 class="heading-rec">Our<span>Recommendations</span></h1>
         <div class="recommendations-card">
@@ -142,6 +147,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Code for the Shop by Department Section -->
     <section class="department" id="department">
         <h1 class="heading">Shop Products by <span>Department</span></h1>
         <div class="items">
@@ -916,6 +923,32 @@
             </div>
         </section>
     </section>
+
+    <section id="review">
+        <h1 class="heading"> Customer's <span>Review</span> </h1>
+        <div class="main-block">
+            <div class="left-part">
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-at"></i>
+                <i class="fas fa-mail-bulk"></i>
+            </div>
+            <form action="/">
+                <h1>Write a Review For Us!</h1>
+                <div class="info">
+                    <input class="fname" type="text" name="name" placeholder="Full name">
+                    <input type="text" name="name" placeholder="Email">
+                    <input type="text" name="name" placeholder="Phone number">
+                </div>
+                <p>Message</p>
+                <div>
+                    <textarea rows="4"></textarea>
+                </div>
+                <button class = "btn" type="submit" href="#">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Code for the footer section -->
     <footer class="footer" id="contact">
         <div class="row">
             <div class="col">
@@ -944,7 +977,7 @@
                     <li><a href="#recommendations">Recommendations</a></li>
                     <li><a href="#department">Products</a></li>
                     <li><a href="#">Review</a></li>
-                    <li><a href="#search">Search</a></li>
+                    <li><a href="quiz/quiz.html" target="_blank">Play Quiz</a></li>
                 </ul>
             </div>
             <div class="col">
