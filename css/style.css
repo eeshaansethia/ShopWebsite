@@ -706,6 +706,54 @@ hr {
     background: var(--black);
 }
 
+#review .testimonials {
+    padding: 1rem;
+    display: flex;
+    margin: 2rem;
+}
+
+#review .testimonials .box {
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem 0.7rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+    margin: 1rem 1rem;
+    padding: 2rem;
+}
+
+#review .testimonials .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+#review .testimonials .box img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+
+#review .testimonials .box p {
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1rem;
+}
+
+#review .testimonials .box h3 {
+    padding-bottom: .5rem;
+    color: var(--black);
+    font-size: 1.7rem;
+}
+
+#review .testimonials .box .stars i {
+    color: var(--pink);
+    font-size: 1.7rem;
+}
+
 .modal-content {
     position: fixed;
     z-index: 1000;
@@ -874,6 +922,11 @@ hr {
     .heading {
         padding: 6.5rem;
         padding-bottom: 0;
+    }
+
+    #review .testimonials {
+        display: flex;
+        flex-direction: column;
     }
 }
 
