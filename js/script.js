@@ -169,6 +169,21 @@ function showModalRemove() {
     }
 }
 
+function modalDesc() {
+    let textModal = document.querySelector('.modal-text');
+    let content_para = document.querySelector('.description .content').textContent;
+    textModal.innerHTML = content_para;
+    modal.style.display = "flex";
+    span_close.onclick = function () {
+        modal.style.display = "none";
+    }
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
 
 function show10() {
     if (i1 % 2 === 0) {
@@ -667,5 +682,5 @@ function show45() {
     i36++;
 }
 function show46() {
-    alert("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus corporis. Consequatur fugit sequi, saepe quis officiis magni dolor dolore unde, dignissimos illo voluptates voluptas");
+    modalDesc();
 }
